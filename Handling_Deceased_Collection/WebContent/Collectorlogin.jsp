@@ -89,7 +89,7 @@ table {
 	<div class="panel-footer">
 	<div align="center">
 		<h1>Collector Login</h1>
-		<form action="<%=request.getContextPath()%>/login" method="post">
+		<form action="%=request.getContextPath()%>/login" method="post">
 			<table style="with: 100%">
 				<tr>
 					<td>Collector_ID</td>
@@ -101,7 +101,8 @@ table {
 				</tr>
 
 			</table>
-			<input type="submit" value="Login" />
+			<a href="Take and submit report.jsp"><button type="button">Login
+			</button></a>
 		</form>
 		<div class="footer"><%@ include file="footer.jsp"%>
 	</div>

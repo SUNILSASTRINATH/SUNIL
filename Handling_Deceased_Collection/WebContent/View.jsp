@@ -7,8 +7,8 @@ byte[ ] imgData = null ;
 Statement stmt = null;
 ResultSet rs = null;
 try {
-Class.forName("com.mysql.jdbc.Driver");
-con = DriverManager.getConnection("jdbc:mysql://localhost:3306/handling_deceased_collection","root","sunil");
+Class.forName("com.mysql.cj.jdbc.Driver");
+con = DriverManager.getConnection("jdbc:mysql://localhost:3306/handling_deceased_collection?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","sunil");
 stmt = con.createStatement();
 rs = stmt.executeQuery("select image from image where id = '1'");
 if (rs.next()) {

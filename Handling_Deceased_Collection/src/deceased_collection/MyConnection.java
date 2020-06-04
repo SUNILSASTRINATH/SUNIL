@@ -8,8 +8,9 @@ public class MyConnection implements MyProvider {
 
 	public static Connection getCon() {
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection(connUrl, username, pwd);
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con = DriverManager.getConnection(connUrl,username,pwd);
+			System.out.println("hello");
 		} catch (Exception e) {
 			System.out.println(e);
 		}

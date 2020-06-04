@@ -94,7 +94,7 @@ label {
 			<!-- <label for="start">Select date:</label> <input type="date"
 				id="datefield" name="reportDate" value="2020-05-21" min="1990-01-01"
 				max=""> -->
-			<a href="view.jsp"><button type="button">Upload
+			<a href="View.jsp"><button type="button">Upload
 					Image</button></a>
 		</div>
 	</form>
